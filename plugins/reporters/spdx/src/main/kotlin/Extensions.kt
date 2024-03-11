@@ -189,6 +189,7 @@ internal fun Package.toSpdxPackage(
         },
         packageVerificationCode = packageVerificationCode,
         name = id.name,
+        supplier = "Organization: " + id.namespace,
         summary = description.nullOrBlankToSpdxNone(),
         versionInfo = id.version
     )
